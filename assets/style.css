@@ -80,7 +80,7 @@ a:hover {
 .hero {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -209,4 +209,8 @@ blockquote {
 /* Remove the extra top gap in the text column */
 .hero > :not(img) > *:first-child {
   margin-top: 0;
+}
+
+.header {
+  text-align: center;
 }
