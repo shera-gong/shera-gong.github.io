@@ -179,7 +179,7 @@ blockquote {
 }
 
 .hero > img {
-  flex: 0 0 320px; /* fixed image column */
+  flex: 0 0 240px; /* fixed image column */
 }
 
 .hero > :not(img) {
