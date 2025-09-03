@@ -205,3 +205,8 @@ blockquote {
     width: 100%;
   }
 }
+
+/* Remove the extra top gap in the text column */
+.hero > :not(img) > *:first-child {
+  margin-top: 0;
+}
