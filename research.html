@@ -61,4 +61,157 @@
     .header {
       background: var(--cream);
       border-bottom: 1px solid var(--border);
-      padding: 52px 32px
+      padding: 52px 32px 44px;
+      text-align: center;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .section {
+      padding: 52px 0 48px;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--border);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 36px;
+    }
+
+    .paper {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .paper:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .paper h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+
+    .paper .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+
+    .paper .abstract {
+      margin-top: 12px;
+      color: #2a2a2a;
+      font-size: 0.97rem;
+    }
+
+    .paper .draft-link {
+      margin-top: 10px;
+      font-size: 0.88rem;
+    }
+    .paper .draft-link a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.18s;
+    }
+    .paper .draft-link a:hover { border-color: var(--green); }
+
+    .other-pubs p {
+      color: #2a2a2a;
+      font-size: 0.97rem;
+      margin-bottom: 1em;
+    }
+    .other-pubs p:last-child { margin-bottom: 0; }
+    .other-pubs em { font-style: italic; }
+
+    @media (max-width: 680px) {
+      .section { padding: 36px 0 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="https://www.dropbox.com/scl/fi/0sptuomu5q262fww4893k/CV_Shera-Gong.pdf?rlkey=negsswd8qismsmxt8rk9q5zgm&st=7c6xtlyi&dl=0">CV</a>
+    <span class="spacer"></span>
+  </div>
+</nav>
+
+<header class="header">
+  <h1>Research</h1>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="section">
+      <div class="section-title">Working Papers</div>
+
+      <div class="paper">
+        <h3>Forced to Talk? Spillover Effects of Alternative Data on Voluntary Disclosure</h3>
+        <p class="meta">Job Market Paper (solo-authored)</p>
+        <p class="meta">Committee: Sugata Roychowdhury (Chair), Ronald Dye, Dimitris Papanikolaou, Beverly Walter</p>
+        <p class="meta">Presentation: Northwestern University, 2025 AAA/Deloitte Foundation/J. Michael Cook Doctoral Consortium, 2025 WashU Dopuch Accounting Conference PhD Poster Session</p>
+        <p class="abstract">I examine how different levels of alternative data coverage on firms influence the disclosure behavior of their non-covered peers. I hypothesize that the availability of alternative data, especially consumer-sourced, on industry peers motivates investors' demand for more information from non-covered firms, prompting non-covered firms to increase their disclosures. I test this prediction by constructing a novel, continuous peer data coverage measure using a comprehensive consumer purchases dataset. Consistent with my prediction, I find that non-covered firms issue more and timelier voluntary disclosures as peer coverage rises. The effect is stronger when non-covered firms share greater institutional ownership with covered peers, face higher asymmetry, or rely more on external capital, consistent with the channel through which institutional investors exert information pressure on non-covered firms. Two quasi-natural experiments support this causal interpretation, i.e., greater consumer data coverage on peers causes more disclosure from non-covered firms. Interestingly, although non-covered firms disclose more frequently, disclosure quality declines. Overall, the findings reveal a novel spillover channel through which alternative data impact disclosure behavior beyond the covered firms.</p>
+        <p class="draft-link"><a href="#">Draft (coming soon)</a></p>
+      </div>
+
+      <div class="paper">
+        <h3>The Effect of Litigation Risk on Investors' Trading</h3>
+        <p class="meta">With <a href="https://www.kellogg.northwestern.edu/faculty/directory/rickmann_georg/" style="color:var(--green);text-decoration:none;border-bottom:1px solid transparent;">Georg Rickmann</a> and <a href="https://www.kellogg.northwestern.edu/faculty/directory/roychowdhury_sugata/" style="color:var(--green);text-decoration:none;border-bottom:1px solid transparent;">Sugata Roychowdhury</a></p>
+        <p class="meta">Presentation: 2025 Columbia Junior Accounting Conference, 2025 INSEAD Accounting Symposium, 2025 Kellogg Accounting Conference, 2025 Wash U Dopuch Accounting Conference</p>
+        <p class="abstract">This paper examines how litigation risk impacts investors' trading behavior and stock liquidity. We exploit an unexpected legal event that reduced litigation risk for firms in the Ninth Circuit by raising the standard for plaintiffs to launch Rule 10b-5 securities litigation. We show that trading volume rises, and bid-ask spreads decline for firms in the Ninth Circuit following the ruling (relative to firms outside the circuit). Additional tests are consistent with the notion in Edmans and Manso (2011) that reducing investors' ability to intervene through litigation induces a shift towards "governance through trading" (aka the "Wall Street Rule"), which in turn leads to more dispersed stock ownership, more trading activity, lower trading costs, and increased fundamental price efficiency.</p>
+        <p class="draft-link"><a href="https://www.dropbox.com/scl/fi/6i5d36u0oezs7o751kkdt/GRR_most-updated.pdf?rlkey=m6ztud00ohrz71xifbasjxfmi&dl=0">Draft</a></p>
+      </div>
+
+      <div class="paper">
+        <h3>The Impact of Alternative Data on Trading of Institutional Investors</h3>
+        <p class="meta">Solo-authored</p>
+        <p class="meta">Presentation: Northwestern University</p>
+        <p class="abstract">I examine how alternative data influences the investment behavior of short-horizon institutional investors. I hypothesize that the timeliness and granularity of alternative data provide these investors with an information advantage, enabling them to trade more frequently and concentrate holdings in firms with greater data coverage. Using NielsenIQ Retail Scanner Data and the introduction of satellite imagery as sources of alternative data, I first validate this premise by showing that institutional investors' intra-quarter trading responds to weekly unexpected revenue signals from NielsenIQ, which capture near real-time product sales for covered firms. Consistent with the predictions, I find that short-horizon investors increase turnover and hold more concentrated portfolios in firms with greater NielsenIQ coverage. These effects are amplified when firms face greater information asymmetry, magnifying investors' relative information advantage; and when trading costs are lower, enhancing their ability to capture trading profits. I also find consistent trading effects from the introduction of satellite data and from NielsenIQ's 2017 online sales expansion, reinforcing causal interpretation. Overall, the findings show that alternative data not only informs trades but also reshapes portfolio strategies, particularly for short-horizon investors.</p>
+        <p class="draft-link"><a href="#">Draft (coming soon)</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Other Publications</div>
+      <div class="other-pubs">
+        <p>Gong, X., et al., (2016). Design and Synthesis of a Water-Stable Anionic Uranium-Based Metal-Organic Framework (MOF) with Ultra Large Pores. <em>Angewandte Chemie, 128</em>(35), 10514-10518.</p>
+        <p>Gong, X., et al., (2017). Intramolecular Energy and Electron Transfer within a Diazaperopyrenium-Based Cyclophane. <em>Journal of the American Chemical Society, 139</em>(11), 4107-4116.</p>
+        <p>Gong, X., et al., (2018). Toward a Charged Homo[2]Catenane Employing Diazaperopyrenium Homophilic Recognition. <em>Journal of the American Chemical Society, 140</em>(21), 6540-6544.</p>
+        <p>Gong, X., et al., (2018). Epitaxial Growth of Cyclodextrin-Containing MOF Based on a Host-Guest Strategy. <em>Journal of the American Chemical Society, 140</em>(36), 11402-11407.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>
