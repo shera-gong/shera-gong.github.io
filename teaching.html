@@ -1,59 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Publications · Shera Gong</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching - Shera Gong</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #006747;
+      --cream: #faf8f4;
+      --ink: #1a1a1a;
+      --muted: #5a5a5a;
+      --border: #d8d2c8;
+      --nav-h: 52px;
+    }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-size: 16.5px;
+      line-height: 1.75;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--green);
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+    }
+    .nav .inner {
+      max-width: 960px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .nav a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 3px;
+      transition: background 0.18s, color 0.18s;
+    }
+    .nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .nav .spacer { flex: 1; }
+
+    .header {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 52px 32px 44px;
+      text-align: center;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .section {
+      padding: 52px 0 48px;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--border);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .section p {
+      color: #2a2a2a;
+      font-size: 0.97rem;
+      margin-bottom: 1em;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    .course {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .course:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .course h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .course p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .quote {
+      border-left: 2px solid var(--green);
+      padding-left: 20px;
+      margin-bottom: 20px;
+      color: #2a2a2a;
+      font-style: italic;
+      font-size: 0.97rem;
+    }
+    .quote:last-child { margin-bottom: 0; }
+
+    @media (max-width: 680px) {
+      .section { padding: 36px 0 32px; }
+    }
+  </style>
 </head>
 <body>
-  
-<div class="nav">
-  <div class="container">
+
+<nav class="nav">
+  <div class="inner">
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="teaching.html">Teaching</a>
     <a href="https://www.dropbox.com/scl/fi/0sptuomu5q262fww4893k/CV_Shera-Gong.pdf?rlkey=negsswd8qismsmxt8rk9q5zgm&st=7c6xtlyi&dl=0">CV</a>
     <span class="spacer"></span>
   </div>
-</div>
+</nav>
 
-  <div class="container header">
-    <h1>Teaching</h1>
-  </div>
+<header class="header">
+  <h1>Teaching</h1>
+</header>
 
-  <div class="container section">
-    <h2>Teaching Interests</h2>
-    <p>I am interested in teaching financial accounting (including Introductory, Intermediate, and Advanced Financial Statement Analysis), managerial accounting, and data analytics at all levels.</p>
-  </div>
+<main>
+  <div class="container">
 
-  <div class="container section">
-    <h2>Teaching Experience</h2>
-    <p>MBA Course: Financial Accounting</p>
-    <ul>
-      <li>Teaching Assistant for Professor Ron Dye, 2022, 2023, 2025</li>
-      <li>Rating Average: 5.36/6.0, Median: 6.0/6.0</li>
-    </ul>
-    <p>EMBA Course: Managerial Accounting</p>
-    <ul>
-      <li>Teaching Assistant for Professor Sugata Roychowdhury 2023, 2024</li>
-      <li>Rating Average: 5.39/6.0, Median: 6.0/6.0</li>
-    </ul>
-  </div>
+    <div class="section">
+      <div class="section-title">Teaching Interests</div>
+      <p>As an incoming faculty member at Binghamton University, I will be teaching Data Analytics in Accounting.</p>
+    </div>
 
-  <div class="container section">
-    <h2>Selected Student Comments</h2>
-    <p><em>"I LOVE SHERA! She is always in touch with us students. She is always available, professional, positive and she simplifies and breaks down everything that's difficult. I hope she stays as a TA because I know other students will benefit from her."</em></p>
-    <p><em>"Most likely the best TA I've had at Kellogg so far. Incredibly thorough with the TA notes and email responses. I'd love to have Shera as my TA again."</em></p>
-    <p><em>"Incredibly organized and clear – her TA notes were literal godsend! Loved that she incorporated weekly student questions and reexplained things incredibly clearly on the TA notes! Best TA and TA notes ever!"</em></p>
-    <p><em>"Shera was extremely accessible & sent out very valuable notes each week. Best TA I've ever had."</em></p>
-    <p><em>"Extremely enthusiastic with notes and explanations."</em></p>
-    <p><em>"Very knowledgeable about the subject matter. Went through all the important points and answered any questions I had. Recorded sessions and was very helpful in cementing knowledge for the course."</em></p>
+    <div class="section">
+      <div class="section-title">Teaching Experience</div>
+
+      <div class="course">
+        <h3>MBA Course: Financial Accounting</h3>
+        <p>Teaching Assistant for Professor Ron Dye, 2022, 2023, 2025</p>
+        <p>Rating Average: 5.36/6.0 &nbsp;·&nbsp; Median: 6.0/6.0</p>
+      </div>
+
+      <div class="course">
+        <h3>EMBA Course: Managerial Accounting</h3>
+        <p>Teaching Assistant for Professor Sugata Roychowdhury, 2023, 2024</p>
+        <p>Rating Average: 5.39/6.0 &nbsp;·&nbsp; Median: 6.0/6.0</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Selected Student Comments</div>
+
+      <div class="quote">"I LOVE SHERA! She is always in touch with us students. She is always available, professional, positive and she simplifies and breaks down everything that's difficult. I hope she stays as a TA because I know other students will benefit from her."</div>
+      <div class="quote">"Most likely the best TA I've had at Kellogg so far. Incredibly thorough with the TA notes and email responses. I'd love to have Shera as my TA again."</div>
+      <div class="quote">"Incredibly organized and clear - her TA notes were literal godsend! Loved that she incorporated weekly student questions and reexplained things incredibly clearly on the TA notes! Best TA and TA notes ever!"</div>
+      <div class="quote">"Shera was extremely accessible and sent out very valuable notes each week. Best TA I've ever had."</div>
+      <div class="quote">"Extremely enthusiastic with notes and explanations."</div>
+      <div class="quote">"Very knowledgeable about the subject matter. Went through all the important points and answered any questions I had. Recorded sessions and was very helpful in cementing knowledge for the course."</div>
+    </div>
+
   </div>
-  
-<div class="footer">
-  <div class="container">© 2025 Shera Gong</div>
-</div>
+</main>
 
 </body>
 </html>
