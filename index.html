@@ -80,3 +80,127 @@
       color: var(--green);
       letter-spacing: 0.01em;
     }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 56px;
+      align-items: start;
+      padding: 60px 0 48px;
+    }
+
+    .hero-photo { position: relative; }
+    .hero-photo img {
+      width: 100%;
+      display: block;
+      border-radius: 3px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    .hero-photo::before {
+      content: '';
+      position: absolute;
+      inset: 6px -6px -6px 6px;
+      border: 2px solid var(--green);
+      border-radius: 3px;
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    .hero-text p {
+      margin-bottom: 1.1em;
+      color: #2a2a2a;
+    }
+    .hero-text p:last-child { margin-bottom: 0; }
+
+    .hero-text .cv-link {
+      color: var(--green);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1.5px;
+      transition: opacity 0.18s;
+    }
+    .hero-text .cv-link:hover { opacity: 0.75; }
+
+    .contact-block {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.97rem;
+    }
+    .contact-block .label {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2px;
+    }
+    .contact-block a {
+      color: var(--green);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.18s;
+    }
+    .contact-block a:hover { border-color: var(--green); }
+
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; gap: 36px; }
+      .hero-photo { max-width: 260px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="https://www.dropbox.com/scl/fi/0sptuomu5q262fww4893k/CV_Shera-Gong.pdf?rlkey=negsswd8qismsmxt8rk9q5zgm&st=7c6xtlyi&dl=0">CV</a>
+    <span class="spacer"></span>
+  </div>
+</nav>
+
+<header class="header">
+  <h1>Shera Gong</h1>
+  <div class="institution">Binghamton University</div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="hero">
+
+      <div class="hero-photo">
+        <img src="assets/img/photo_Shera-Gong.jpeg" alt="Shera Gong">
+      </div>
+
+      <div class="hero-text">
+        <p>Welcome to my website!</p>
+        <p>I am an Assistant Professor of Accounting at the Binghamton University.</p>
+        <p>My current research focus is on disclosures, investors' trading, and spillover effects of big data.</p>
+        <p>Please see my <a class="cv-link" href="https://www.dropbox.com/scl/fi/0sptuomu5q262fww4893k/CV_Shera-Gong.pdf?rlkey=negsswd8qismsmxt8rk9q5zgm&st=7c6xtlyi&dl=0" target="_blank" rel="noopener">CV</a> for additional information.</p>
+
+        <div class="contact-block">
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:shera.gong@binghamton.edu">shera.gong@binghamton.edu</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
